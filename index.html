@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1 id="title">What's your favorite video game plataform?</h1>
+        <p id="description">
+          Thank you for taking the time to answer this survey
+        </p>
+      </header>
+
+      <form action="#" id="survey-form">
+        <fieldset class="user-info">
+          <legend>About you</legend>
+          <label for="name" id="name-label"
+            >Name:
+            <input
+              type="text"
+              name="name"
+              id="name"
+              required
+              placeholder="Enter your name"
+            />
+          </label>
+          <label for="email" id="email-label"
+            >Email:
+            <input type="email" id="email" placeholder="Enter your email" />
+          </label>
+          <label for="age" id="number-label"
+            >Age:
+            <input type="number" id="age" min="18" max="98" placeholder="Age" />
+          </label>
+        </fieldset>
+        <fieldset class="platform-info">
+          <legend>About plattaform</legend>
+          <label for="dropdown"
+            >Choose your favorite platform
+            <select name="dropdown" id="dropdown">
+              <option value="">Select one 🤔</option>
+              <option value="">PC 🖥️</option>
+              <option value="">Xbox 🎮</option>
+              <option value="">PlayStation 🎮</option>
+              <option value="">Nintendo 🕹️</option>
+            </select>
+          </label>
+          <p>Would you recommend this platform to a friend?</p>
+          <label for="definitely"
+            ><input
+              type="radio"
+              name="recommend-user"
+              value="definitely"
+              id="definitely"
+              class="inline"
+            />
+            Definitely</label
+          >
+          <label for="maybe"
+            ><input
+              type="radio"
+              name="recommend-user"
+              value="maybe"
+              id="maybe"
+              class="inline"
+            />
+            Maybe</label
+          >
+          <label for="not-sure"
+            ><input
+              type="radio"
+              name="recommend-user"
+              value="not-sure"
+              id="not-sure"
+              class="inline"
+            />
+            Not sure</label
+          >
+          <p>Because is your favorite</p>
+          <label for="price-games"
+            ><input
+              type="checkbox"
+              name="price"
+              id="price-games"
+              value="price"
+              class="inline"
+            />Price games</label
+          >
+          <label for="exclusive-games"
+            ><input
+              type="checkbox"
+              name="exclusive-games"
+              id="exclusive-games"
+              value="exclusive-games"
+              class="inline"
+            />Exclusive games</label
+          >
+          <label for="subscription-benefits"
+            ><input
+              type="checkbox"
+              name="subscription-benefits"
+              id="subscription-benefits"
+              value="subscription-benefits"
+              class="inline"
+            />Subscription benefits</label
+          >
+
+          <label for=""
+            >Any coments
+            <textarea
+              name="any-coments"
+              id="any-coments"
+              cols="30"
+              rows="10"
+              placeholder="I want more..."
+            ></textarea>
+          </label>
+        </fieldset>
+        <input type="submit" value="Submit" id="submit" />
+      </form>
+    </div>
+    <footer class="credits-section">
+      <p>
+        Made with HTML and CSS by
+        <a href="https://github.com/C-H-Dev" target="_blank">CH-DEV</a>
+      </p>
+      <p>
+        <a
+          href="https://www.freepik.com/free-vector/gamification-cartoon-concept-with-man-playing-desktop-computer-vector-illustration_63439490.htm#query=game&position=7&from_view=search&track=sph"
+          target="_blank"
+          >Image by macrovector</a
+        >
+        on Freepik
+      </p>
+    </footer>
+  </body>
+</html>
